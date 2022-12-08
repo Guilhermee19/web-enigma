@@ -1,4 +1,6 @@
 <main [style.background]="status">
     <img *ngIf="image" [src]="image" class="imagem">
-    <p>{{ puzzle }}</p>
+    <p [innerHTML]="puzzle"></p>
+
+    <h2>{{ invisible }}</h2>
 </main>

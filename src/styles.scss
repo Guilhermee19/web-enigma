@@ -2,6 +2,7 @@
 
 :root {
     --default: rgb(15, 15, 15);
+    --invisible: rgb(18, 18, 18);
     --error: rgb(121, 7, 7);
 }
 
@@ -25,7 +26,17 @@ body{
 
         p{
             color: white;
+            font-size: 18px;
             margin: 0;
+        }
+
+        h2{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            color: var(--invisible);
+            margin: 0 !important;
+            line-height: 1 !important;
         }
     }
 }
