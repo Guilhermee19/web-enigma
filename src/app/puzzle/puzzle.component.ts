@@ -21,7 +21,7 @@ export class PuzzleComponent implements OnInit {
 
   url: string = '';
   image: string = '';
-  puzzle: string = '';
+  puzzle: string = 'sete + dois';
   status: string = 'var(--default)';
 
   ngOnInit(): void {
@@ -43,7 +43,14 @@ export class PuzzleComponent implements OnInit {
         this.image = 'https://i.ibb.co/k11kbfZ/11102626071143.webp'
         this.status = 'var(--default)'; break;
       case '/jokenpo': 
-        this.puzzle = 'SUCESS!'; this.image = '';
+        this.puzzle = 'ROT13 - qrfraub'; this.image = '';
+        this.status = 'var(--default)'; break;
+      case '/desenho':
+        this.puzzle = 'ROT13 - qrfraub'; this.image = '';
+        this.status = 'var(--default)'; break;
+
+      default: 
+        this.puzzle = ''; this.image = '';
         this.status = 'var(--default)'; break;
     }
   }

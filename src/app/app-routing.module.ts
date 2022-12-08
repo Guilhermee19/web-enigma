@@ -14,6 +14,7 @@ const routes: Routes = [
       		{ path: 'james', component: PuzzleComponent},
       		{ path: 'bond', component: PuzzleComponent},
       		{ path: 'jokenpo', component: PuzzleComponent},
+      		{ path: 'desenho', component: PuzzleComponent},
 		]
 	},
 	{ path: '**', redirectTo: 'digite_a_resposta_aqui' }
